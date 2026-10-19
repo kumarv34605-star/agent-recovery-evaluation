@@ -1,0 +1,19 @@
+{
+  "experiment_id": "20261010T183531612394Z",
+  "timestamp_utc": "2026-10-10T18:35:31.612394+00:00",
+  "working_directory": "D:\\RETRACE\\sandbox\\demo_repo",
+  "git_status_before": "?? src/\n",
+  "test_result": {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "return_code": 0,
+    "stdout": "...                                                                      [100%]\n3 passed in 0.02s\n",
+    "stderr": ""
+  },
+  "git_status_after": "?? src/\n",
+  "success": true
+}

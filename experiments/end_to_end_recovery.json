@@ -1,0 +1,53 @@
+{
+  "experiment_id": "2026-10-19T19:45:39.765419+00:00",
+  "workflow": "end_to_end_recovery",
+  "isolation": "temporary copy; original project unchanged",
+  "baseline": {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "return_code": 0,
+    "stdout": "...                                                                      [100%]\n3 passed in 0.03s\n",
+    "stderr": "",
+    "duration_seconds": 5.8995,
+    "passed": true
+  },
+  "injected_failure": {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "return_code": 1,
+    "stdout": "..F                                                                      [100%]\n================================== FAILURES ===================================\n________________________________ test_multiply ________________________________\n\n    def test_multiply():\n>       assert multiply(4, 3) == 12\nE       assert 7 == 12\nE        +  where 7 = multiply(4, 3)\n\nD:\\RETRACE\\sandbox\\demo_repo\\test_calculator.py:13: AssertionError\n=========================== short test summary info ===========================\nFAILED test_calculator.py::test_multiply - assert 7 == 12\n1 failed, 2 passed in 0.54s\n",
+    "stderr": "",
+    "duration_seconds": 3.8742,
+    "passed": false
+  },
+  "decision": {
+    "strategy": "restore_known_good_file",
+    "reason": "The controlled test failure was detected. Retrying unchanged code cannot address this injected bug."
+  },
+  "recovery_action": {
+    "strategy": "restore_known_good_file",
+    "duration_seconds": 0.0009
+  },
+  "verification": {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "return_code": 0,
+    "stdout": "...                                                                      [100%]\n3 passed in 0.03s\n",
+    "stderr": "",
+    "duration_seconds": 3.2427,
+    "passed": true
+  },
+  "recovered": true
+}

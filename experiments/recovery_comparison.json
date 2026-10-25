@@ -1,5 +1,5 @@
 {
-  "experiment_id": "2026-10-15T05:37:26.062477+00:00",
+  "experiment_id": "2026-10-24T19:36:52.819883+00:00",
   "experiment": "controlled_recovery_comparison",
   "isolation": "temporary copy of demo repository",
   "baseline": {
@@ -12,7 +12,7 @@
     "return_code": 0,
     "stdout": "...                                                                      [100%]\n3 passed in 0.03s\n",
     "stderr": "",
-    "duration_seconds": 4.1511,
+    "duration_seconds": 6.5076,
     "passed": true
   },
   "injected_failure": {
@@ -23,9 +23,9 @@
       "-q"
     ],
     "return_code": 1,
-    "stdout": "..F                                                                      [100%]\n================================== FAILURES ===================================\n________________________________ test_multiply ________________________________\n\n    def test_multiply():\n>       assert multiply(4, 3) == 12\nE       assert 7 == 12\nE        +  where 7 = multiply(4, 3)\n\nD:\\RETRACE\\sandbox\\demo_repo\\test_calculator.py:13: AssertionError\n=========================== short test summary info ===========================\nFAILED test_calculator.py::test_multiply - assert 7 == 12\n1 failed, 2 passed in 0.47s\n",
+    "stdout": "..F                                                                      [100%]\n================================== FAILURES ===================================\n________________________________ test_multiply ________________________________\n\n    def test_multiply():\n>       assert multiply(4, 3) == 12\nE       assert 7 == 12\nE        +  where 7 = multiply(4, 3)\n\nD:\\RETRACE\\sandbox\\demo_repo\\test_calculator.py:13: AssertionError\n=========================== short test summary info ===========================\nFAILED test_calculator.py::test_multiply - assert 7 == 12\n1 failed, 2 passed in 0.45s\n",
     "stderr": "",
-    "duration_seconds": 3.9359,
+    "duration_seconds": 4.4608,
     "passed": false
   },
   "strategies": {
@@ -38,9 +38,9 @@
           "-q"
         ],
         "return_code": 1,
-        "stdout": "..F                                                                      [100%]\n================================== FAILURES ===================================\n________________________________ test_multiply ________________________________\n\n    def test_multiply():\n>       assert multiply(4, 3) == 12\nE       assert 7 == 12\nE        +  where 7 = multiply(4, 3)\n\nD:\\RETRACE\\sandbox\\demo_repo\\test_calculator.py:13: AssertionError\n=========================== short test summary info ===========================\nFAILED test_calculator.py::test_multiply - assert 7 == 12\n1 failed, 2 passed in 0.49s\n",
+        "stdout": "..F                                                                      [100%]\n================================== FAILURES ===================================\n________________________________ test_multiply ________________________________\n\n    def test_multiply():\n>       assert multiply(4, 3) == 12\nE       assert 7 == 12\nE        +  where 7 = multiply(4, 3)\n\nD:\\RETRACE\\sandbox\\demo_repo\\test_calculator.py:13: AssertionError\n=========================== short test summary info ===========================\nFAILED test_calculator.py::test_multiply - assert 7 == 12\n1 failed, 2 passed in 0.39s\n",
         "stderr": "",
-        "duration_seconds": 3.9486,
+        "duration_seconds": 3.7237,
         "passed": false
       },
       "recovered": false
@@ -54,9 +54,9 @@
           "-q"
         ],
         "return_code": 0,
-        "stdout": "...                                                                      [100%]\n3 passed in 0.03s\n",
+        "stdout": "...                                                                      [100%]\n3 passed in 0.02s\n",
         "stderr": "",
-        "duration_seconds": 3.3845,
+        "duration_seconds": 3.1952,
         "passed": true
       },
       "recovered": true

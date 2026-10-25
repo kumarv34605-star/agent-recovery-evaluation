@@ -2,9 +2,9 @@
   "file": "calculator.py",
   "verification_passed": true,
   "test_return_code": 0,
-  "test_stdout": "...                                                                      [100%]\n3 passed in 0.04s\n",
+  "test_stdout": "...                                                                      [100%]\n3 passed in 0.11s\n",
   "test_stderr": "",
-  "verification_duration_seconds": 3.818,
+  "verification_duration_seconds": 14.3193,
   "workspace": "temporary copy",
   "original_project_modified": false
 }
